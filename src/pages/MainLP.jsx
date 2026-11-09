@@ -468,7 +468,7 @@ const FortalezaSPA = () => {
             </p>
           </div>
           <div className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[320px] h-[400px] w-full bg-slate-900 flex items-center justify-center p-6">
-            <img src="/foto-perfil-07-fundo-transparente-compact.png" alt="Fortaleza Contabilidade" loading="lazy" decoding="async" className="w-full h-full object-contain" />
+            <img src="/foto-perfil-07-fundo-transparente.png" alt="Fortaleza Contabilidade" loading="lazy" decoding="async" className="w-full h-full object-contain" />
           </div>
         </div>
       </section>
