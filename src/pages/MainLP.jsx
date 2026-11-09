@@ -188,13 +188,13 @@ const FortalezaSPA = () => {
       <motion.div className="fixed top-0 left-0 right-0 h-1 bg-blue-600 origin-left z-50" style={{ scaleX }} />
 
       {/* 1. NAVBAR */}
-      <header className={`fixed w-full top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/50 transition-all duration-300 ${isScrolled ? 'py-2 shadow-sm' : 'py-4'}`}>
-        <div className="max-w-[1400px] mx-auto px-4 xl:px-6 flex justify-between items-center gap-4">
+      <header className={`fixed w-full top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-slate-200/70 transition-all duration-300 ${isScrolled ? 'py-2 shadow-[0_8px_30px_rgba(15,39,71,0.08)]' : 'py-3'}`}>
+        <div className="max-w-7xl mx-auto px-5 xl:px-8 flex justify-between items-center gap-6">
           <a href="/" className="flex items-center gap-2 cursor-pointer shrink-0">
-            <img src="/logo-06-oficial-fundo-transparente.png" alt="Fortaleza Contabilidade" className="h-14 md:h-16 w-auto max-w-[260px] object-contain" />
+            <img src="/logo-06-oficial-fundo-transparente.png" alt="Fortaleza Contabilidade" className="h-12 md:h-14 w-auto max-w-[230px] object-contain" />
           </a>
 
-          <nav className="hidden lg:flex flex-1 justify-center items-center gap-4 xl:gap-6 font-medium text-[13px] xl:text-sm text-slate-600 whitespace-nowrap">
+          <nav className="hidden lg:flex flex-1 justify-center items-center gap-5 xl:gap-7 font-medium text-[13px] xl:text-sm text-slate-600 whitespace-nowrap">
             <a href="#servicos" className="hover:text-blue-600 transition-colors">Serviços</a>
             <a href="#agro" className="hover:text-blue-600 transition-colors">Agronegócio</a>
             <a href="#sobre" className="hover:text-blue-600 transition-colors">Sobre nós</a>
@@ -204,8 +204,8 @@ const FortalezaSPA = () => {
           </nav>
 
           <div className="hidden lg:flex items-center gap-2 xl:gap-3 text-[13px] xl:text-sm shrink-0">
-            <a href="https://wa.me/5562996000930" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-4 xl:px-5 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-600/30 font-semibold whitespace-nowrap">
-              Falar com Especialista
+            <a href="https://wa.me/5562996000930" target="_blank" rel="noopener noreferrer" className="bg-blue-700 text-white px-5 xl:px-6 py-3 rounded-lg hover:bg-blue-800 transition-all shadow-lg shadow-blue-700/20 font-semibold whitespace-nowrap">
+              Fale com um especialista
             </a>
           </div>
 
@@ -219,7 +219,7 @@ const FortalezaSPA = () => {
           {isMobileMenuOpen && (
             <motion.div
               initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}
-              className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-2xl shadow-2xl rounded-b-3xl border-t border-slate-100 flex flex-col p-8 gap-5 font-medium z-50"
+              className="lg:hidden absolute top-full left-0 w-full bg-white/98 backdrop-blur-2xl shadow-2xl border-t border-slate-100 flex flex-col p-6 gap-4 font-medium z-50"
             >
               <a href="#servicos" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-700 hover:text-blue-600 transition flex items-center gap-3 border-b border-slate-100 pb-3">Serviços</a>
               <a href="#agro" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-700 hover:text-blue-600 transition flex items-center gap-3 border-b border-slate-100 pb-3">Agronegócio</a>
@@ -227,17 +227,17 @@ const FortalezaSPA = () => {
               <a href="#online" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-700 hover:text-blue-600 transition flex items-center gap-3 border-b border-slate-100 pb-3">Atendimento online</a>
               <a href="#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-700 hover:text-blue-600 transition flex items-center gap-3 border-b border-slate-100 pb-3">FAQ</a>
               <a href="#contato" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-700 hover:text-blue-600 transition flex items-center gap-3 border-b border-slate-100 pb-3">Contato</a>
-              <a href="https://wa.me/5562996000930" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="bg-blue-600 text-white text-center py-4 rounded-full mt-2 font-bold shadow-lg w-full">Falar com Especialista</a>
+              <a href="https://wa.me/5562996000930" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)} className="bg-blue-700 text-white text-center py-4 rounded-lg mt-2 font-bold shadow-lg w-full">Fale com um especialista</a>
             </motion.div>
           )}
         </AnimatePresence>
       </header>
 
       {/* 2. HERO SECTION */}
-      <section className="relative min-h-[100dvh] flex flex-col justify-center pt-20 pb-6 md:pt-28 md:pb-8 overflow-hidden">
+      <section className="relative min-h-[760px] flex flex-col justify-center pt-28 pb-16 overflow-hidden bg-[#071a35]">
         <div className="absolute inset-0 z-0">
-          <img src="/fundo-00.webp" alt="Fortaleza Contabilidade - contabilidade online e rural" fetchPriority="high" decoding="async" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/85 to-slate-900/40"></div>
+          <img src="/fundo04.webp" alt="Gestão financeira e contabilidade estratégica" fetchPriority="high" decoding="async" className="w-full h-full object-cover object-center opacity-70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#061a35] via-[#061a35]/90 to-[#061a35]/35"></div>
         </div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
@@ -246,50 +246,56 @@ const FortalezaSPA = () => {
             variants={{ hidden: { opacity: 0 }, visible: { opacity: 1, transition: { staggerChildren: 0.15 } } }}
             className="w-full flex flex-col items-center md:items-start text-center md:text-left"
           >
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="inline-block px-3 py-1 md:px-4 md:py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 font-semibold text-xs md:text-sm mb-4 backdrop-blur-sm">
-              Contabilidade online e rural
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="inline-flex items-center gap-2 text-blue-200 font-semibold text-xs md:text-sm mb-6 tracking-[0.18em] uppercase">
+              <span className="w-8 h-px bg-blue-400" /> Contabilidade online e rural
             </motion.div>
-            <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-4 max-w-4xl">
-              Contabilidade estratégica para quem deseja crescer com <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">segurança.</span>
+            <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] mb-6 max-w-3xl tracking-tight">
+              Contabilidade inteligente para fortalecer o seu <span className="text-blue-300">crescimento.</span>
             </motion.h1>
 
             <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-sm md:text-lg text-slate-300 mb-8 max-w-2xl leading-relaxed">
-              Soluções contábeis, tributárias e rurais com atendimento 100% online para empresas e produtores de todo o Brasil, com ênfase no estado de Goiás.
+              Soluções contábeis, tributárias e rurais com atendimento personalizado e 100% online para empresas e produtores de todo o Brasil.
             </motion.p>
 
             <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start w-full sm:w-auto mb-10">
               <a href="https://wa.me/5562996000930?text=Ol%C3%A1!%20Conheci%20a%20Fortaleza%20Contabilidade%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os." target="_blank" rel="noopener noreferrer" className="relative group overflow-hidden bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-full font-bold text-center transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(37,99,235,0.6)] hover:scale-105">
                 <FaWhatsapp size={20} className="relative z-10" />
-                <span className="relative z-10">Solicitar atendimento</span>
+                <span className="relative z-10">Fale com um especialista</span>
               </a>
-              <a href="#servicos" className="bg-white/5 text-white border border-white/10 px-8 py-4 rounded-full font-semibold text-center hover:bg-white/10 hover:border-white/20 transition-all backdrop-blur-md">
+              <a href="#servicos" className="bg-white/10 text-white border border-white/25 px-8 py-4 rounded-lg font-semibold text-center hover:bg-white hover:text-[#071a35] transition-all backdrop-blur-md">
                 Conhecer serviços
               </a>
+            </motion.div>
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-blue-100">
+              <span className="flex items-center gap-2"><Globe size={16} className="text-cyan-300" /> Atendimento nacional</span>
+              <span className="flex items-center gap-2"><Sprout size={16} className="text-cyan-300" /> Especialização rural</span>
+              <span className="flex items-center gap-2"><Building2 size={16} className="text-cyan-300" /> Ênfase em Goiás</span>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* 3. SERVICES SECTION */}
-      <section id="servicos" className="py-24 bg-white relative overflow-hidden">
+      <section id="servicos" className="py-28 bg-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Nossos serviços</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">Soluções contábeis, fiscais, tributárias e trabalhistas para empresas, produtores rurais e profissionais.</p>
+          <div className="max-w-2xl mb-14">
+            <p className="text-blue-700 font-bold text-xs tracking-[0.2em] uppercase mb-4">Soluções sob medida</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-950 mb-5 tracking-tight">Tudo o que sua operação precisa para avançar.</h2>
+            <p className="text-slate-600 leading-relaxed">Soluções contábeis, fiscais, tributárias e trabalhistas para empresas, produtores rurais e profissionais.</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-200 border border-slate-200">
             {services.map((service, idx) => (
               <motion.div
                 key={idx}
                 whileHover={{ y: -8 }}
                 onClick={() => setSelectedService(service)}
-                className="bg-slate-50 border border-slate-200 p-8 rounded-3xl cursor-pointer hover:shadow-xl hover:border-blue-300 transition-all group text-center md:text-left flex flex-col items-center md:items-start"
+                className="bg-white p-8 min-h-[250px] cursor-pointer hover:bg-blue-50/50 transition-all group text-center md:text-left flex flex-col items-center md:items-start"
               >
-                <div className="w-16 h-16 bg-white border border-slate-200 rounded-2xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-blue-50 border border-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-700 group-hover:text-white transition-colors">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-slate-900">{service.title}</h3>
+                <h3 className="text-lg font-bold mb-3 text-slate-900">{service.title}</h3>
                 <p className="text-slate-600 text-sm leading-relaxed">{service.desc}</p>
               </motion.div>
             ))}
@@ -388,18 +394,21 @@ const FortalezaSPA = () => {
       </section>
 
       {/* 4. AGRONEGÓCIO */}
-      <section id="agro" className="py-24 bg-slate-50 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 font-bold text-xs mb-6 mx-auto">
-              <span className="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
-              Especialização
+      <section id="agro" className="py-28 bg-[#071a35] text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20 bg-[url('/fundo02.webp')] bg-cover bg-center" />
+        <div className="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 text-cyan-300 font-bold text-xs tracking-[0.2em] uppercase mb-6">
+              <Sprout size={16} /> Um dos nossos pilares
             </div>
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">Especialistas no agronegócio</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">Posicionamos a Fortaleza Contabilidade como referência no atendimento ao produtor rural e às empresas do campo.</p>
+            <h2 className="text-4xl md:text-5xl font-black mb-5 tracking-tight">Contabilidade para quem produz e transforma.</h2>
+            <p className="text-blue-100/80 max-w-xl leading-relaxed">Atuação próxima de produtores rurais e empresas do agronegócio, com organização contábil, orientação tributária e apoio para decisões mais seguras.</p>
+            <a href="https://wa.me/5562996000930?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20contabilidade%20rural." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-8 bg-white text-[#071a35] px-6 py-3.5 rounded-lg font-bold hover:bg-cyan-100 transition-colors">
+              Falar sobre contabilidade rural <ArrowRight size={18} />
+            </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-white/15 border border-white/15">
             {[
               "Contabilidade para produtores rurais",
               "Organização contábil e tributária rural",
@@ -413,35 +422,30 @@ const FortalezaSPA = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex items-center gap-4 text-left"
+                className="bg-[#0b2547]/95 p-6 min-h-[132px] hover:bg-[#10335f] transition-colors flex items-center gap-4 text-left"
               >
                 <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center shrink-0">
-                  <ShieldCheck className="w-5 h-5 text-blue-600" />
+                  <ShieldCheck className="w-5 h-5 text-cyan-300" />
                 </div>
-                <span className="font-bold text-slate-800 text-sm md:text-base leading-tight">{item}</span>
+                <span className="font-semibold text-blue-50 text-sm md:text-base leading-tight">{item}</span>
               </motion.div>
             ))}
           </div>
 
-          <div className="mt-10 text-center">
-            <a href="https://wa.me/5562996000930?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20contabilidade%20rural." target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 text-white px-8 py-3.5 rounded-full font-bold hover:bg-blue-700 transition-colors shadow-lg">
-              Falar sobre contabilidade rural
-            </a>
-          </div>
         </div>
       </section>
 
       {/* 5. SEGMENTOS */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-20 bg-white relative overflow-hidden border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Segmentos atendidos</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Experiência para diferentes realidades</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">Atendemos diferentes perfis de clientes, com atenção às particularidades de cada segmento.</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {segments.map((seg, i) => (
-              <div key={i} className="bg-slate-50 border border-slate-200 p-5 rounded-2xl flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-blue-600"></div>
+              <div key={i} className="bg-white border-l-2 border-blue-600 p-5 flex items-center gap-3 hover:bg-blue-50/50 transition-colors">
+                <div className="w-1.5 h-1.5 rounded-full bg-blue-600"></div>
                 <span className="font-medium text-slate-800">{seg}</span>
               </div>
             ))}
@@ -450,10 +454,11 @@ const FortalezaSPA = () => {
       </section>
 
       {/* 6. SOBRE NÓS */}
-      <section id="sobre" className="py-24 bg-slate-50 relative overflow-hidden">
+      <section id="sobre" className="py-28 bg-slate-50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="text-center lg:text-left flex flex-col items-center lg:items-start">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Sobre a Fortaleza Contabilidade</h2>
+            <p className="text-blue-700 font-bold text-xs tracking-[0.2em] uppercase mb-4">Nossa história</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-950 mb-6 tracking-tight">Uma contabilidade próxima, clara e estratégica.</h2>
             <p className="text-slate-600 mb-6 leading-relaxed">
               A Fortaleza Contabilidade nasceu em 2022, da visão de que a contabilidade é essencial para o desenvolvimento, a organização e o crescimento de qualquer empresa, e da certeza de que seria possível oferecer um serviço contábil descomplicado, acessível e próximo da realidade de cada cliente.
             </p>
@@ -467,26 +472,26 @@ const FortalezaSPA = () => {
               Acreditamos que a contabilidade deve ser uma aliada do crescimento, e não apenas uma obrigação.
             </p>
           </div>
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[320px] h-[400px] w-full bg-slate-900 flex items-center justify-center p-6">
+          <div className="relative overflow-hidden min-h-[360px] h-[480px] w-full bg-[#071a35] flex items-center justify-center p-8 border border-white">
             <img src="/foto-perfil-07-fundo-transparente.png" alt="Fortaleza Contabilidade" loading="lazy" decoding="async" className="w-full h-full object-contain" />
           </div>
         </div>
       </section>
 
       {/* 7. ATENDIMENTO ONLINE */}
-      <section id="online" className="py-24 bg-blue-50 relative overflow-hidden">
+      <section id="online" className="py-24 bg-blue-50/70 relative overflow-hidden border-y border-blue-100">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 font-bold text-sm mb-4">Atendimento online</div>
           <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-6">Seu negócio merece uma contabilidade próxima, mesmo à distância.</h2>
           <p className="text-lg text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
             O atendimento digital permite atender clientes de diferentes regiões do Brasil, com atenção especial ao estado de Goiás. Tudo com segurança, organização e proximidade.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <div className="bg-white border border-slate-200 px-6 py-4 rounded-2xl flex items-center gap-3">
+          <div className="flex flex-wrap justify-center gap-px bg-blue-200 border border-blue-200 max-w-2xl mx-auto">
+            <div className="bg-white px-6 py-5 flex-1 min-w-[220px] flex items-center justify-center gap-3">
               <Globe className="w-5 h-5 text-blue-600" />
               <span className="font-medium text-slate-800">Atendimento em todo o Brasil</span>
             </div>
-            <div className="bg-white border border-slate-200 px-6 py-4 rounded-2xl flex items-center gap-3">
+            <div className="bg-white px-6 py-5 flex-1 min-w-[180px] flex items-center justify-center gap-3">
               <Laptop className="w-5 h-5 text-blue-600" />
               <span className="font-medium text-slate-800">100% online</span>
             </div>
