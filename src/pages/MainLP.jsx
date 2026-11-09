@@ -191,7 +191,7 @@ const FortalezaSPA = () => {
       <header className={`fixed w-full top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/50 transition-all duration-300 ${isScrolled ? 'py-2 shadow-sm' : 'py-4'}`}>
         <div className="max-w-[1400px] mx-auto px-4 xl:px-6 flex justify-between items-center gap-4">
           <a href="/" className="flex items-center gap-2 cursor-pointer shrink-0">
-            <img src="/logo.svg" alt="Fortaleza Contabilidade" className="h-10 w-auto object-contain" />
+            <img src="/logo-06-oficial-fundo-transparente.png" alt="Fortaleza Contabilidade" className="h-14 md:h-16 w-auto max-w-[260px] object-contain" />
           </a>
 
           <nav className="hidden lg:flex flex-1 justify-center items-center gap-4 xl:gap-6 font-medium text-[13px] xl:text-sm text-slate-600 whitespace-nowrap">
@@ -467,8 +467,8 @@ const FortalezaSPA = () => {
               Acreditamos que a contabilidade deve ser uma aliada do crescimento, e não apenas uma obrigação.
             </p>
           </div>
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl h-[400px] w-full bg-slate-900">
-            <img src="/fundo06.webp" alt="Fortaleza Contabilidade" loading="lazy" decoding="async" className="w-full h-full object-cover" />
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl min-h-[320px] h-[400px] w-full bg-slate-900 flex items-center justify-center p-6">
+            <img src="/foto-perfil-07-fundo-transparente-compact.png" alt="Fortaleza Contabilidade" loading="lazy" decoding="async" className="w-full h-full object-contain" />
           </div>
         </div>
       </section>
