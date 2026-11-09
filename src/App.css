@@ -182,3 +182,6 @@
     border-right-color: var(--border);
   }
 }
+#nl-badge-frame {
+  display: none !important;
+}
