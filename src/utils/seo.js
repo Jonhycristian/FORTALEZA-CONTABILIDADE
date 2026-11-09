@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
 const SITE_URL = 'https://www.fortalezacontabilidade.com.br';
+const SHARE_IMAGE = `${SITE_URL}/logo-oficial-fundo-transparente.jpg`;
 
 function upsertMeta(name, content, attr = 'name') {
   if (!content) return;
@@ -39,8 +40,10 @@ export function applyPageSeo({ title, description, path = '/', faqs = [], preloa
   upsertMeta('og:title', title, 'property');
   upsertMeta('og:description', description, 'property');
   upsertMeta('og:url', url, 'property');
+  upsertMeta('og:image', SHARE_IMAGE, 'property');
   upsertMeta('twitter:title', title);
   upsertMeta('twitter:description', description);
+  upsertMeta('twitter:image', SHARE_IMAGE);
 
   const oldPreload = document.head.querySelector('link[data-page-preload]');
   if (oldPreload) oldPreload.remove();
