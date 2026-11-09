@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 
 const SITE_URL = 'https://www.fortalezacontabilidade.com.br';
-const SHARE_IMAGE = `${SITE_URL}/logo-oficial-fundo-transparente.jpg`;
+const SHARE_IMAGE = 'https://fortaleza-contabilidade.netlify.app/logo-oficial-fundo-transparente.jpg';
 
 function upsertMeta(name, content, attr = 'name') {
   if (!content) return;
