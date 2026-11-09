@@ -615,7 +615,7 @@ const FortalezaSPA = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-8 pb-12">
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <div className="mb-6 bg-white/5 p-4 rounded-2xl border border-white/10 shadow-xl inline-block backdrop-blur-sm">
-                <img src="/logo.svg" alt="Logotipo Fortaleza Contabilidade" loading="lazy" decoding="async" className="h-12 w-auto object-contain" />
+                <img src="/logo-06-oficial-fundo-transparente.png" alt="Logotipo Fortaleza Contabilidade" loading="lazy" decoding="async" className="h-14 md:h-16 w-auto max-w-[280px] object-contain" />
               </div>
               <p className="text-sm text-slate-400 leading-relaxed max-w-xs font-medium">Contabilidade estratégica para empresas e produtores rurais, com atendimento 100% online.</p>
             </div>
