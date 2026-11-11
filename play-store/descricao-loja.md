@@ -53,7 +53,7 @@ contabilidade, contador, contabilidade online, contabilidade rural, agronegócio
 
 - Site: `https://www.fortalezacontabilidade.com.br`
 - Telefone: `+55 62 99600-0930`
-- E-mail: **[PENDENTE — informe o e-mail oficial]**
+- E-mail: `brunamoraes@fortalezacontabilidade.com`
 
 ## Novidades da versão 1.0.0
 

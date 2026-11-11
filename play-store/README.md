@@ -74,7 +74,7 @@ Use o modelo `play-store/assetlinks.json.exemplo`, trocando `COLE_AQUI_O_SHA256`
 
 Já estão prontos os textos e as imagens. Ainda falta você informar:
 
-- [ ] **E-mail de contato** para a loja (obrigatório e público). Hoje o site só tem WhatsApp; preciso de um e-mail.
+- [x] **E-mail de contato** para a loja: `brunamoraes@fortalezacontabilidade.com`.
 - [ ] Categoria sugerida: **Negócios** (alternativa: Finanças).
 - [ ] Site: `https://www.fortalezacontabilidade.com.br`
 - [ ] Telefone: `+55 62 99600-0930`
@@ -127,7 +127,7 @@ O site já anuncia "acesso a documentos, guias e atendimento". Se o app for só 
 
 Para eu continuar e deixar o pacote 100% pronto:
 
-1. **E-mail** que será usado na conta e no contato da loja.
+1. ~~**E-mail** que será usado na conta e no contato da loja.~~ Recebido: `brunamoraes@fortalezacontabilidade.com`.
 2. **Tipo de conta:** pessoal (CPF) ou organização (CNPJ)? Se organização, já tem **D-U-N-S**?
 3. **Nome do pacote** confirmado: pode ser `br.com.fortalezacontabilidade.app`?
 4. **Endereço completo** da empresa (cidade/UF) para a ficha da loja.

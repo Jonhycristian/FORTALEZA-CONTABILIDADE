@@ -133,8 +133,9 @@ function Privacidade() {
               <li>Revogação do consentimento e oposição a tratamentos específicos.</li>
             </ul>
             <p className="mt-2">
-              Para exercer seus direitos, entre em contato pelo WhatsApp <strong>(62) 99600-0930</strong>. Responderemos
-              no prazo previsto na legislação.
+              Para exercer seus direitos, entre em contato pelo WhatsApp <strong>(62) 99600-0930</strong> ou pelo e-mail{' '}
+              <a href="mailto:brunamoraes@fortalezacontabilidade.com" className="text-blue-700 underline underline-offset-2">brunamoraes@fortalezacontabilidade.com</a>.
+              Responderemos no prazo previsto na legislação.
             </p>
           </section>
 
@@ -158,7 +159,9 @@ function Privacidade() {
             <h2 className="text-xl font-bold text-slate-900 mb-2">11. Contato</h2>
             <p>
               Dúvidas sobre esta política ou sobre o tratamento de dados podem ser enviadas pelo WhatsApp{' '}
-              <strong>(62) 99600-0930</strong> ou pelo formulário de contato do site.
+              <strong>(62) 99600-0930</strong>, pelo e-mail{' '}
+              <a href="mailto:brunamoraes@fortalezacontabilidade.com" className="text-blue-700 underline underline-offset-2">brunamoraes@fortalezacontabilidade.com</a>{' '}
+              ou pelo formulário de contato do site.
             </p>
             <p className="mt-2 text-sm text-slate-500">
               Fortaleza Contabilidade — CNPJ 45.474.189/0001-92

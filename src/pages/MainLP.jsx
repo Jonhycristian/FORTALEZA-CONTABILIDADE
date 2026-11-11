@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring, useInView } from 'framer-motion';
 import {
   Menu, X, Calculator, Users, Briefcase, Search, ShieldCheck, ChevronDown,
-  Phone, ArrowRight, FileText, Sprout, Building2, User, Handshake, Globe, Laptop
+  Phone, Mail, ArrowRight, FileText, Sprout, Building2, User, Handshake, Globe, Laptop
 } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { usePageSeo } from '../utils/seo';
@@ -640,6 +640,7 @@ const FortalezaSPA = () => {
               <h4 className="text-white font-bold text-lg mb-6 flex items-center gap-2"><div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div>Contato</h4>
               <ul className="space-y-4 text-sm text-slate-300 font-medium">
                 <li className="flex items-center justify-center md:justify-start gap-3"><FaWhatsapp size={18} className="text-blue-400 shrink-0" /> (62) 99600-0930</li>
+                <li className="flex items-center justify-center md:justify-start gap-3 break-all"><Mail size={18} className="text-blue-400 shrink-0" /> <a href="mailto:brunamoraes@fortalezacontabilidade.com" className="hover:text-white transition-colors">brunamoraes@fortalezacontabilidade.com</a></li>
               </ul>
             </div>
           </div>
