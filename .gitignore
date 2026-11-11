@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Chaves de assinatura do Android (nunca versionar)
+*.jks
+*.keystore
+

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 // Página 404 simples da SPA. O netlify.toml mantém o fallback

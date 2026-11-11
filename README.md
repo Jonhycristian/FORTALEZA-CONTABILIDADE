@@ -1,60 +1,58 @@
-# AtendCon Contabilidade - Landing Page Moderna
+# Fortaleza Contabilidade — Site e PWA
 
-![App Desktop](public/img/atendcon-banner-desktop.png)
+Site institucional e aplicativo web (PWA) da **Fortaleza Contabilidade** (CNPJ 45.474.189/0001-92), com atendimento 100% online para empresas, produtores rurais e agronegócio.
 
-Uma Landing Page de alta performance, moderna e responsiva desenvolvida para a **AtendCon Contabilidade**, projetada para converter visitantes em clientes através de uma experiência de usuário (UX) premium e visual de ponta.
+## Funcionalidades
 
-## 🚀 Funcionalidades e Diferenciais
+- Landing page responsiva com React 19 + Vite + Tailwind CSS.
+- Animações com Framer Motion.
+- Triagem de leads em modal, com envio contextual para o WhatsApp.
+- SEO por rota, Open Graph, Schema.org e FAQ estruturado.
+- Política de Privacidade em `/politica-de-privacidade`.
+- PWA instalável: manifest, service worker e suporte offline.
+- Pacote de publicação na Play Store em [`play-store/`](./play-store/).
 
-- **Design Premium & UI/UX:** Layout desenhado com paletas de cores sofisticadas (Glassmorphism e gradientes dark) para transmitir confiança e modernidade.
-- **Animações Fluidas:** Integração completa com **Framer Motion** para animações de entrada (fade-in, slide-up), contadores numéricos animados e micro-interações ao passar o mouse.
-- **Triagem Inteligente de Leads:** Modal multi-etapas ("balãozinho") que qualifica o cliente (Segmento de Atuação e Objetivo) antes do redirecionamento para o WhatsApp, enviando mensagens dinâmicas e contextuais.
-- **Carrossel de Depoimentos Inteligente:** Sistema de "Prova Social" com auto-scroll suave que pausa inteligentemente ao receber interação do usuário (hover/touch).
-- **100% Responsivo (Mobile-First):** Experiência de navegação perfeita em smartphones, tablets e desktops. Rodapé otimizado estruturalmente para leitura em dispositivos móveis.
-- **Componentização React:** Arquitetura limpa utilizando React Hooks (`useState`, `useEffect`, `useRef`, `useInView`, `AnimatePresence`).
+## Rodando localmente
 
-## 🛠️ Tecnologias Utilizadas
+```bash
+npm install
+npm run dev
+```
 
-Este projeto foi construído com as tecnologias mais modernas do ecossistema Front-end:
+Acesse `http://localhost:5173`.
 
-* **[React 19](https://react.dev/)**: Biblioteca JavaScript para construção da interface de usuário.
-* **[Vite](https://vitejs.dev/)**: Bundler e servidor de desenvolvimento super rápido.
-* **[Tailwind CSS](https://tailwindcss.com/)**: Framework CSS utilitário para estilização ágil e design responsivo.
-* **[Framer Motion](https://www.framer.com/motion/)**: Biblioteca para animações ricas e interações baseadas em scroll.
-* **[Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)**: Conjunto de ícones modernos e leves.
+## Build de produção
 
-## ⚙️ Como Executar o Projeto Localmente
-
-1. **Clone o repositório**
-   ```bash
-   git clone https://github.com/Jonhycristian/ATENDCON.git
-   ```
-
-2. **Acesse a pasta do projeto**
-   ```bash
-   cd ATENDCON
-   ```
-
-3. **Instale as dependências**
-   ```bash
-   npm install
-   ```
-
-4. **Inicie o servidor de desenvolvimento**
-   ```bash
-   npm run dev
-   ```
-
-5. **Acesse no seu navegador**
-   Abra `http://localhost:5173`
-
-## 📦 Build para Produção
-
-Para gerar a versão otimizada de produção, execute:
 ```bash
 npm run build
+npm run preview
 ```
-Os arquivos otimizados serão gerados na pasta `dist/`.
+
+O build sai em `dist/` e inclui o manifest, o service worker, os ícones e a política de privacidade.
+
+## Publicação na Play Store
+
+O passo a passo completo, o que já está pronto e o que ainda depende do titular está em [`play-store/README.md`](./play-store/README.md).
+
+## Estrutura
+
+```
+public/
+  icons/                 ícones da PWA e da loja
+  manifest.webmanifest   manifest da PWA
+  sw.js                  service worker (offline)
+play-store/
+  assets/                ícone 512, feature graphic e screenshots
+  README.md              checklist de publicação
+  descricao-loja.md      textos prontos para a ficha da Play Store
+  assetlinks.json.exemplo
+src/
+  pages/MainLP.jsx       landing page
+  pages/Privacidade.jsx  política de privacidade
+  pages/NotFound.jsx     404
+  utils/seo.js           SEO por rota
+```
 
 ---
-Desenvolvido com foco na excelência contábil e alta performance digital.
+
+Desenvolvido com foco em excelência contábil e performance digital.

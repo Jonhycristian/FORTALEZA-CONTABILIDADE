@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useSpring, useInView } from 'framer-motion';
 import {
   Menu, X, Calculator, Users, Briefcase, Search, ShieldCheck, ChevronDown,
-  Phone, ArrowRight, FileText, Receipt, Truck, FileCheck, Cloud, Zap, LifeBuoy,
-  ExternalLink, Sprout, Building2, HeartPulse, User, Handshake, Globe, Laptop
+  Phone, ArrowRight, FileText, Sprout, Building2, User, Handshake, Globe, Laptop
 } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { usePageSeo } from '../utils/seo';
@@ -645,8 +644,13 @@ const FortalezaSPA = () => {
             </div>
           </div>
 
-          <div className="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-semibold tracking-wide text-slate-500">
+          <div className="pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-3 text-xs font-semibold tracking-wide text-slate-500 text-center md:text-left">
             <p>© {new Date().getFullYear()} Fortaleza Contabilidade. Todos os direitos reservados.</p>
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+              <a href="/politica-de-privacidade" className="hover:text-white transition-colors">Política de Privacidade</a>
+              <span className="hidden sm:inline text-slate-700">•</span>
+              <p>CNPJ: 45.474.189/0001-92</p>
+            </div>
           </div>
         </div>
       </footer>
@@ -655,9 +659,10 @@ const FortalezaSPA = () => {
       <a
         href="https://wa.me/5562996000930?text=Ol%C3%A1!%20Conheci%20a%20Fortaleza%20Contabilidade%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os."
         target="_blank" rel="noopener noreferrer"
+        aria-label="Falar com a Fortaleza Contabilidade pelo WhatsApp"
         className={`fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 z-50 flex items-center justify-center ${isScrolled ? 'translate-y-0 opacity-100' : 'translate-y-16 opacity-0 pointer-events-none'}`}
       >
-        <FaWhatsapp size={32} />
+        <FaWhatsapp size={32} aria-hidden="true" />
       </a>
     </div>
   );
