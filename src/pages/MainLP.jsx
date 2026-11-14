@@ -49,6 +49,15 @@ const FortalezaSPA = () => {
   }, []);
 
   useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [isMobileMenuOpen]);
+
+  useEffect(() => {
     if (!isFaqInView) return;
     const interval = setInterval(() => {
       setActiveFaq((prev) => (prev !== null ? (prev + 1) % faqs.length : 0));
@@ -217,7 +226,8 @@ const FortalezaSPA = () => {
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.div
-              initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 16 }}
+              transition={{ duration: 0.2, ease: 'easeOut' }}
               className="lg:hidden absolute top-full left-0 w-full bg-white/98 backdrop-blur-2xl shadow-2xl border-t border-slate-100 flex flex-col p-6 gap-4 font-medium z-50"
             >
               <a href="#servicos" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-700 hover:text-blue-600 transition flex items-center gap-3 border-b border-slate-100 pb-3">Serviços</a>
